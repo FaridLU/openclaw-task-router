@@ -30,7 +30,7 @@ A **single prompt + config** that turns your [OpenClaw](https://github.com/openc
 | "Convert this screenshot to code" | `visual` | MiMo V2 Omni | Vision-native model |
 | "Find where sessions are handled" | `fast` | DeepSeek V4 Flash | Cheap, fast, good enough |
 
-**All models served via [OpenCode](https://opencode.ai)** — one API, one subscription, no per-provider keys needed.
+**All models served via [OpenCode](https://opencode.ai/go?ref=QCXVTDZ17F)** — one API, one subscription, no per-provider keys needed.
 
 ---
 
@@ -119,7 +119,7 @@ Router
 | `visual` | Screenshots, mockups, UI analysis | MiMo V2 Omni | Off | Qwen 3.6 Plus |
 | `fast` | Quick edits, search, tests, docs | DeepSeek V4 Flash | Off | Qwen 3.5 Plus |
 
-All models via **OpenCode** (`opencode-go/`) provider — [opencode.ai](https://opencode.ai)
+All models via **OpenCode** (`opencode-go/`) provider — [opencode.ai](https://opencode.ai/go?ref=QCXVTDZ17F)
 
 ---
 
@@ -246,7 +246,7 @@ This is a living project. Every time the router makes a mistake, update the **An
 - **Farid** ([@FaridLU](https://github.com/FaridLU)) — OpenClaw power user who wanted the ultimate AI orchestration experience
 - **Claw** 🔀 — The OpenClaw Task Router agent that eats its own dogfood
 
-Powered by [OpenCode](https://opencode.ai) models — one API, six specialists, zero per-provider keys.
+Powered by [OpenCode](https://opencode.ai/go?ref=QCXVTDZ17F) models — one API, six specialists, zero per-provider keys.
 
 ---
 
