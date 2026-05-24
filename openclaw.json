@@ -1,0 +1,69 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "~/.openclaw/workspace",
+      "model": {
+        "primary": "opencode-go/deepseek-v4-flash"
+      },
+      "models": {
+        "opencode-go/kimi-k2.6": {},
+        "opencode-go/deepseek-v4-flash": {},
+        "opencode-go/glm-5.1": {},
+        "opencode-go/deepseek-v4-pro": {},
+        "opencode-go/mimo-v2-omni": {},
+        "opencode-go/qwen3.5-plus": {},
+        "opencode-go/qwen3.6-plus": {}
+      }
+    },
+    "list": [
+      {
+        "id": "plan",
+        "description": "Architecture, design, planning — GLM-5.1 high thinking",
+        "model": {
+          "primary": "opencode-go/glm-5.1",
+          "fallbacks": ["opencode-go/kimi-k2.6"]
+        }
+      },
+      {
+        "id": "build",
+        "description": "Complex multi-file features, refactors — Kimi K2.6 high thinking",
+        "model": {
+          "primary": "opencode-go/kimi-k2.6",
+          "fallbacks": ["opencode-go/deepseek-v4-pro", "opencode-go/qwen3.6-plus"]
+        }
+      },
+      {
+        "id": "debug",
+        "description": "Debugging, terminal-heavy tasks — DeepSeek V4 Pro medium thinking",
+        "model": {
+          "primary": "opencode-go/deepseek-v4-pro",
+          "fallbacks": ["opencode-go/kimi-k2.6", "opencode-go/deepseek-v4-flash"]
+        }
+      },
+      {
+        "id": "review",
+        "description": "Code reviews, PR analysis — Kimi K2.6 high thinking",
+        "model": {
+          "primary": "opencode-go/kimi-k2.6",
+          "fallbacks": ["opencode-go/deepseek-v4-pro"]
+        }
+      },
+      {
+        "id": "visual",
+        "description": "Screenshots, UI mockups, visual analysis — MiMo V2 Omni",
+        "model": {
+          "primary": "opencode-go/mimo-v2-omni",
+          "fallbacks": ["opencode-go/qwen3.6-plus"]
+        }
+      },
+      {
+        "id": "fast",
+        "description": "Simple edits, search, tests, docs — DeepSeek V4 Flash",
+        "model": {
+          "primary": "opencode-go/deepseek-v4-flash",
+          "fallbacks": ["opencode-go/qwen3.5-plus"]
+        }
+      }
+    ]
+  }
+}
